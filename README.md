@@ -3,22 +3,6 @@
 The program is a mini shell we use the commands of the execvp , cd , pipes and
 redirections
 
-##Functions
-In my program there is the main and 10 functions.
-- char** readTokens(FILE* stream); // to parse the input of the user : command and its
-arguments
-- void freeTokens(char** tokens);//to free the memory of the allocation of the array which
-contains the input of the user
-- void sigHandler(int signum); // to catch the signal SIGINT
-- int verifyDollar(char** tokens);//private function to verify is there is a $
-- char** diviseLeft(char** tokens ,int location); //to obtain the firstCommand
-- char** diviseRight(char** tokens, int location); //to obtain the secondCommand
-- void redirection(char** tokens,int location);//the function if there is a sign redirection
-- void fPipe(char** tokens,int location);//the function if there is a sign of pipe
-- int test(char** tok);// to verify if there is a sign in the pipe
-- int tLocation(char** tok); //to find the location of the pipe
-
-
 ##global variable
 - int run=0; //boolean which is running the program
 - int status=0; //the status of the progam
